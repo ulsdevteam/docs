@@ -8,7 +8,7 @@
   *
   * PKP DocBook XSL customization layer for FO transformations.
   *
-  * $Id: pkpfo.xsl,v 1.1 2008/07/08 16:25:38 asmecher Exp $
+  * $Id$
   -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -21,7 +21,7 @@
 
     <xsl:import href="docbook.xsl"/>
     <xsl:import href="pagesetup.xsl"/>
-
+    
     <!-- Basic parameters -->
 
     <xsl:param name="fop.extensions">0</xsl:param>
@@ -137,6 +137,13 @@
         </xsl:attribute>
         <xsl:attribute name="color">#1D5A61</xsl:attribute>
     </xsl:attribute-set>
+    
+    <xsl:attribute-set name="guibutton.properties">
+        <xsl:attribute name="font-family">
+            <xsl:value-of select="$monospace.font.family"/>
+        </xsl:attribute>
+        <xsl:attribute name="color">#1D5A61</xsl:attribute>
+    </xsl:attribute-set>
 
     <xsl:attribute-set name="xref.properties">
         <xsl:attribute name="color">#0066CC</xsl:attribute>
@@ -158,7 +165,7 @@
     </xsl:attribute-set>
     
     <xsl:attribute-set name="mediaobject.properties">
-        <xsl:attribute name="border">0.5pt solid gray</xsl:attribute>
+        <xsl:attribute name="border">1pt solid gray</xsl:attribute>
         <xsl:attribute name="background">#cccccc</xsl:attribute>
         <xsl:attribute name="padding">0.1in</xsl:attribute>
     </xsl:attribute-set>
