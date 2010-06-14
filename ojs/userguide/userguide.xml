@@ -2,12 +2,12 @@
 <!--
     * userguide.xml
     *
-    * Copyright (c) 2000-2008 John Willinsky
+    * Copyright (c) 2000-2010 John Willinsky
     * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
     *
     * OJS Userguide
     *
-    * $Id: technicalreference.xml,v 1.1 2008/07/04 06:02:32 asmecher Exp $
+    * $Id$
 -->
 <book version="5.0" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:ns5="http://www.w3.org/1999/xhtml" xmlns:ns4="http://www.w3.org/1998/Math/MathML"
@@ -37,7 +37,7 @@
       </author>
     </authorgroup>
 
-    <pubdate>February 15 2010</pubdate>
+    <pubdate>June 9 2010</pubdate>
 
     <releaseinfo>1st Edition</releaseinfo>
 
@@ -103,56 +103,19 @@
     <para>For more information, please see the <link xlink:href="http://pkp.sfu.ca">Public Knowledge
         Project website</link>. For contact information, please see the <link
         xlink:href="http://pkp.sfu.ca/contact">contact page</link>.</para>
-
-    <para><mediaobject>
+    
+    <para>
+      <mediaobject>
         <imageobject>
-          <imagedata align="center" fileref="figures/stanford.png" format="PNG"/>
+          <imagedata align="center" fileref="../common/logo_list.png" format="PNG"/>
         </imageobject>
-
         <textobject>
-          <phrase>Standford University</phrase>
+          <phrase>Simon Fraser University Library; UBC Faculty of Education; Canadian
+            Centre for Studies in Publishing; Standford University; Arizona State
+            University</phrase>
         </textobject>
-      </mediaobject></para>
-
-    <para><mediaobject>
-        <imageobject>
-          <imagedata align="center" fileref="figures/sfulibrary.png" format="PNG"/>
-        </imageobject>
-
-        <textobject>
-          <phrase>Simon Fraser University Library</phrase>
-        </textobject>
-      </mediaobject></para>
-
-    <para><mediaobject>
-        <imageobject>
-          <imagedata align="center" fileref="figures/ccsp.png" format="PNG"/>
-        </imageobject>
-
-        <textobject>
-          <phrase>Canadian Centre for Studies in Publishing</phrase>
-        </textobject>
-      </mediaobject></para>
-
-    <para><mediaobject>
-        <imageobject>
-          <imagedata align="center" fileref="figures/ubc.png" format="PNG"/>
-        </imageobject>
-
-        <textobject>
-          <phrase>University of British Columbia Faculty of Education</phrase>
-        </textobject>
-      </mediaobject></para>
-
-    <para><mediaobject>
-        <imageobject>
-          <imagedata align="center" fileref="figures/asu.png" format="PNG"/>
-        </imageobject>
-
-        <textobject>
-          <phrase>Arizona State University</phrase>
-        </textobject>
-      </mediaobject></para>
+      </mediaobject>
+    </para>
   </preface>
 
   <part xml:id="conceptsOverview">
@@ -248,11 +211,10 @@
           </mediaobject>
         </figure>
 
-        <para>The OJS interface can be <link linkend="customizing">extensively customized</link> by
-          uploading new stylesheets at the site, journal, and article level, and by various other
-          journal-specific customizations. For the advanced user, the underlying template system can
-          also be modified. As open source software, you are free to customize OJS as you
-          wish.</para>
+        <para>The OJS interface can be extensively customized by uploading new stylesheets at the
+          site, journal, and article level, and by various other journal-specific customizations.
+          For the advanced user, the underlying template system can also be modified. As open source
+          software, you are free to customize OJS as you wish.</para>
       </sect1>
 
       <sect1 xml:id="overviewSystemRequirements">
@@ -1354,8 +1316,8 @@
             server must be able to execute the <link xlink:href="http://www.gnu.org/software/tar/"
               >GNU tar utility</link>, and must be able to modify the locale registry file
               (<filename>registry/filename.xml</filename>). Locales can always be downloaded and
-            installed manually -- see
-            <!-- FIXME link to installing/translating languages -->.</para>
+            installed manually -- see the <link xlink:href="http://pkp.sfu.ca/ojs_documentation"
+              >online documentation</link> for more information.</para>
 
           <para>The Manage Locales section allows you to install new locales, reload existing
             locales in case you have updated locale files, and uninstall locales if they are no
@@ -1438,8 +1400,8 @@
                 <filename>config.inc.php</filename> file directly from the web. You will be warned
               that you should not make any changes unless you know exactly what you are doing, which
               of course is a reasonable course to follow. You can find more information about
-                <filename>config.inc.php</filename> configuration parameters in the section on <link
-                linkend="systemAdministrationGeneralConfig">System Administration</link>.</para>
+                <filename>config.inc.php</filename> configuration parameters in the file
+              itself.</para>
 
             <para>The final section on this page displays server information: your operating system,
               PHP version, server and database information. You can also view extended PHP
@@ -1625,8 +1587,8 @@
               <para>OJS makes extensive use of internal email forms. This signature will appear on
                 the bottom of all emails sent by the system. You can also enter a bounce address (if
                 the <code>allow_envelope_sender</code> configuration option is enabled in
-                  <filename>config.inc.php</filename> -- see <!-- FIXME add link --> ) where any
-                undeliverable email messages will be sent.</para>
+                  <filename>config.inc.php</filename>) where any undeliverable email messages will
+                be sent.</para>
 
               <figure>
                 <title>Setup Step 1.4: Email Identification</title>
@@ -1812,9 +1774,8 @@
                 <listitem>
                   <para>Review Options: OJS allows for the configuration of a number of review
                     options, including how long reviewers have to complete their review; when to
-                    send reminders to reviewers (see <!-- FIXME add link --> to enable this option);
-                    whether to use a rating system for reviewers (visible only to the editors); and
-                    one-click access for reviewers. </para>
+                    send reminders to reviewers; whether to use a rating system for reviewers
+                    (visible only to the editors); and one-click access for reviewers. </para>
                   <para>One-click access allows editors to send reviewers an email message with a
                     URL that goes directly to the review page for the article in question, without
                     the need to create an account or login. This option is meant to reduce any
@@ -2461,10 +2422,8 @@
                 style sheet is available at: <link
                   xlink:href="http://pkp.sfu.ca/ojs/download/common.css"
                   >http://pkp.sfu.ca/ojs/download/common.css</link> You can also find a thorough
-                guide on customing your journal's style and using themes at <link
-                  xlink:href="http://pkp.sfu.ca/files/docs/customizingojs/index.html"
-                  >http://pkp.sfu.ca/files/docs/customizingojs/index.html</link>.<!--FIXME change to the special topics chapter.-->
-              </para>
+                guide on customing your journal's style and using themes in the <link
+                  xlink:href="pkp.sfu.ca/ojs_documentation">online documentation</link>. </para>
 
               <figure>
                 <title>Setup Step 5.6: Journal Layout</title>
@@ -2647,7 +2606,7 @@
             directories for article and issue files, you can also see the layout templates that were
             uploaded during the Journal Setup.</para>
           <note>
-            <para>The Files Browser does not currently allow acccess to the journal's public/
+            <para>The Files Browser does not currently allow acccess to the journal's <filename>public/</filename>
               directory.</para>
           </note>
           <figure>
@@ -3802,9 +3761,9 @@
                 <para>Subscription Expiry: Upon subscription expiry, readers may be denied access to
                   all subscription content, or to those published after subscription expiry date.
                   Useful reminders can be sent out to your subscribers, informing them of expiry
-                  dates. The Site Administrator will need to make some
-                  <!-- FIXME add link to scheduled_tasks --> setting changes to allow for these
-                  options to be enabled.</para>
+                  dates. The Site Administrator will need to <link linkend="systemAdministartionScheduledTasks">enable and configure</link>
+                    <code>scheduled_tasks</code> within <filename>config.inc.php</filename> to allow
+                  for these options to be enabled.</para>
 
                 <figure>
                   <title>Subscription Expiry Reminders</title>
@@ -5088,8 +5047,8 @@
             <para>This section serves only as an overview of OJS' import/export functionality. Some
               import/export functions, notably the Users and Issues &amp; Articles functions, are
               complex to use and to explain. For detailed usage instructions for all import/export
-              functions, see the <link linkend="importExport">Chapter on Importing and
-                Exporting</link>.</para>
+              functions, see the <link xlink:href="http://pkp.sfu.ca/ojs_documentation"
+                >documentation online</link>.</para>
           </note>
 
           <para>OJS allows Journal Managers to import and export different types of data. To do
@@ -8705,8 +8664,8 @@
 
           <para>If access to content requires a subscription, you will need to first register for a
             Reader account with the OJS journal. See the section on <link
-              linkend="paymentsSubscriptions">payments and
-            subscriptions</link><!--FIXME add more specific link?--> for more subscription
+              linkend="journalManagementPayments">payments</link> and <link
+              linkend="journalManagementSubscriptions">subscriptions</link> for more subscription
             information.</para>
         </sect2>
 
@@ -9422,16 +9381,52 @@ mysql>
         as you continue to use OJS. </para>
 
       <sect1 xml:id="systemAdministrationForum">
-        <title>Finding Solutions on the PKP Support Forum</title>
+        <title>Finding Solutions: PKP Support Forum</title>
         <para>The <link xlink:href="http://pkp.sfu.ca/support/forum">PKP Support Forum</link> is
           generally the first -- and last -- place community members look to for help. The forum
           holds a wealth of information, available via a <link
             xlink:href="http://www.google.com/coop/cse?cx=002015363291970009963:2vtsjhpgphc">Google
             Custom Search</link>.</para>
+
+        <para>The PKP team monitors most subforums in the support forum, and tries to reply to
+          questions within a few days. Other community members may answer more quickly in the
+          meantime. </para>
+
+        <para>Language-specific subforums (for example, the <link
+            xlink:href="http://pkp.sfu.ca/support/forum/viewforum.php?f=29">Spanish support
+            forum)</link> are moderated by volunteer community members, and not directly by PKP team
+          members. We are always happy to consider hosting other language-specific subforums, or
+          pointing to other PKP-specific support resources.</para>
+
+        <para>Please keep the following points in mind as you use the forum:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Check the <link
+                xlink:href="http://pkp.sfu.ca/wiki/index.php/PKP_Frequently_Asked_Questions"
+                >FAQ</link> to see if your question has already been answered. If you aren't exactly
+              sure what kind of problem you are encountering, the FAQ includes many troubleshooting
+              tips.</para>
+          </listitem>
+          <listitem>
+            <para><link
+                xlink:href="http://www.google.com/coop/cse?cx=002015363291970009963:2vtsjhpgphc"
+                >Search</link> before you post. Many questions have been answered already, and we
+              appreciate the time you spend in finding answers. Try searching for error messages, or
+              even parts of messages; for words that have anything to do with the problem at hand;
+              or even for broad categories.</para>
+          </listitem>
+          <listitem>
+            <para>Take some time, if you can, to contribute your own wisdom! The forums are a
+              community endeavour, and we appreciate any feedback, solutions, and other information
+              you may want to provide, either to us or to other community members directly.</para>
+          </listitem>
+        </itemizedlist>
+
       </sect1>
 
       <sect1 xml:id="systemAdministrationGit">
-        <title>Source Code Access via Git</title>
+        <title>Getting Source Code: Access via Git</title>
 
         <para>PKP uses Git, an online distributed version control system, to manage the project's
           application source code. Git allows the developers to quickly and easily share code
@@ -9456,11 +9451,9 @@ mysql>
           how to check out PKP applications from Git, and how to generally work with Git and the
           PKP.</para>
 
-        <para>You can use </para>
-
       </sect1>
       <sect1 xml:id="systemAdministrationBugzilla">
-        <title>Reporting Bugs via Bugzilla</title>
+        <title>Reporting Bugs: Using Bugzilla</title>
         <para>Bugs can be reported in our online Bugzilla bug tracker at <link
             xlink:href="http://pkp.sfu.ca/bugzilla">http://pkp.sfu.ca/bugzilla</link>. We welcome
           bug reports of any kind, including feature requests, but ask that you include as much
@@ -9468,11 +9461,11 @@ mysql>
           database and server information. We encourage you to search <link
             linkend="systemAdministrationForum">the Support Forum</link> and the <link
             xlink:href="http://pkp.sfu.ca/bugzilla/query.cgi?format=advanced">bug database</link> as
-          thoroughly as possible before posting a report, in case the issue has already been
-          raised.</para>
+          thoroughly as possible before posting a report, in case the issue has already been raised,
+          but we greatly prefer getting two reports on one problem than none at all!</para>
       </sect1>
       <sect1 xml:id="systemAdministrationWiki">
-        <title>Future Plans and Current Procedures in the PKP Development Wiki</title>
+        <title>Future Plans and Current Procedures: The PKP Development Wiki</title>
         <para>The <link xlink:href="http://pkp.sfu.ca/wiki">PKP Development Wiki</link> is used to
           track <link xlink:href="http://pkp.sfu.ca/wiki/index.php/General_Software_Milestones"
             >milestones</link> and specific application <link
@@ -9496,64 +9489,24 @@ mysql>
       </sect1>
     </chapter>
 
-    <chapter xml:id="systemAdministrationNotesTroubleshooting">
-      <title>Notes and Troubleshooting</title>
-
-      <itemizedlist>
-        <listitem>
-          <para>If your server is configured to invoke PHP scripts via CGI or FastCGI, it is best to
-            configure OJS to run in a setUID environment. Servers running PHP scripts via
-              <code>mod_php</code> are often not secure, as all PHP scripts on the server typically
-            run with a single user account.</para>
-        </listitem>
-
-        <listitem>
-          <para>The files path configured in config.inc.php using the <code>files_dir</code>
-            directive should not be accessible directly via the web server, i.e. it should not be a
-            subdirectory of your installation path.</para>
-        </listitem>
-
-        <listitem>
-          <para>PHP Safe Mode is "broken", in that directories created by PHP scripts are usually
-            created with default file permissions such that that they cannot be used by those same
-            scripts. It is possible via <filename>php.ini</filename> to relax the strict ownership
-            check to a <code>gid</code> check, which may help if you are forced to use a Safe Mode
-            environment.</para>
-        </listitem>
-
-        <listitem>
-          <para>When moving an OJS installation to another server or otherwise changing URLs, it may
-            be necessary to manually correct any URLs that are specified in the Journal setup pages.
-            Double-check the config.inc.php file to ensure that the <code>base_url</code> setting is
-            correct. OJS should otherwise be able to detect the appropriate URL to use.</para>
-        </listitem>
-
-        <listitem>
-          <para>There is a Frequently Asked Questions document that contains additional information;
-            see <filename>docs/FAQ</filename> in your installation for further details.</para>
-        </listitem>
-
-        <listitem>
-          <para>The <link xlink:href="http://pkp.sfu.ca/support/forum">support forum</link> contains
-            a large knowledge base of common problems and solutions.</para>
-        </listitem>
-      </itemizedlist>
-    </chapter>
-
     <chapter xml:id="systemAdministrationOther">
       <title>Other Administration Components</title>
 
       <para>System Administrators are often tasked with other configuration tasks when administering
-        OJS, such as translation and plugin installation and management.</para>
+        OJS, such as configuring scheduled tasks; email; and plugin installation and management. The
+        following sections detail some of the more common Site Administration tasks. Further
+        information can be found on the <link xlink:href="http://pkp.sfu.ca/support/forum"
+          >forum</link>, in the <link xlink:href="http://pkp.sfu.ca/wiki">wiki</link>, or in other
+          <link xlink:href="http://pkp.sfu.ca/ojs_documentation">documentation</link>.</para>
 
       <sect1 xml:id="systemAdministrationGeneralConfig">
         <title>General Configuration Options</title>
 
         <para>While OJS strives to be an easily-installed, low-maintenance system requiring minimal
           external configuration, a handful of options need direct system access to be configured.
-          These options are largely set in <filename>config.inc.php</filename>, although this is not
-          a comprehensive breakdown of that file -- rather, it you will find here instructions on
-          handling the most commonly changed components.</para>
+          These options are largely set in <filename>config.inc.php</filename>. The following is not
+          a comprehensive breakdown of that file - rather, it you will find here instructions on
+          administering the most commonly changed components.</para>
 
         <note>
           <para>When you enable an option in <filename>config.inc.php</filename> you must ensure
@@ -9606,45 +9559,40 @@ mysql>
           <para>If using the scheduled tasks script, it is recommended that the script be set up to
             execute at least once per day.</para>
 
-          <!--
-                    <para>On *nix operating systems, this can be done by adding a simple cron task:</para>
+          <para>On *nix operating systems, this can be done by adding a simple cron task:</para>
 
-                    <informalexample>
-                        <programlisting>
-# crontab -e www
-0 * * * *       php /path/to/ojs2/tools/runScheduledTasks.php
-                            </programlisting>
-                    </informalexample>
-                    <para>In this example the script would be executed every hour.</para>
+          <informalexample>
+            <programlisting># crontab -e www
+0 * * * *       php /path/to/ojs2/tools/runScheduledTasks.php</programlisting>
+          </informalexample>
+          <para>In this example the script would be executed every hour.</para>
 
-                    <para>On Windows XP systems, this can be done by using the Windows Task
-                        Scheduler:</para>
-                    <orderedlist>
-                        <listitem>
-                            <para> From the Control Panel, double-click on Scheduled Tasks.</para>
-                        </listitem>
-                        <listitem>
-                            <para>Right-click within the Scheduled Tasks window and choose: New >
-                                Scheduled Task</para>
-                        </listitem>
-                        <listitem>
-                            <para>Under the Task tab, in the Run field, enter: php
-                                c:\path\to\ojs2\tools\runScheduledTasks.php</para>
-                        </listitem>
-                        <listitem>
-                            <para>You will also be asked to specify the folder to start this task in
-                                (which will usually be the folder that PHP was installed into) and
-                                the user under which the task will be executed as.</para>
-                        </listitem>
-                        <listitem>
-                            <para>Under Schedule tab and the Settings tab, you can more specifically
-                                configure the task. For example, you can choose start and end dates
-                                for this scheduled task and also how often to execute this
-                            task.</para>
-                        </listitem>
-                    </orderedlist>
-   
--->
+          <para>On Windows XP systems, this can be done by using the Windows Task Scheduler:</para>
+          <orderedlist>
+            <listitem>
+              <para> From the Control Panel, double-click on Scheduled Tasks.</para>
+            </listitem>
+            <listitem>
+              <para>Right-click within the Scheduled Tasks window and choose: New > Scheduled
+                Task</para>
+            </listitem>
+            <listitem>
+              <para>Under the Task tab, in the Run field, enter: php
+                c:\path\to\ojs2\tools\runScheduledTasks.php</para>
+            </listitem>
+            <listitem>
+              <para>You will also be asked to specify the folder to start this task in (which will
+                usually be the folder that PHP was installed into) and the user under which the task
+                will be executed as.</para>
+            </listitem>
+            <listitem>
+              <para>Under Schedule tab and the Settings tab, you can more specifically configure the
+                task. For example, you can choose start and end dates for this scheduled task and
+                also how often to execute this task.</para>
+            </listitem>
+          </orderedlist>
+
+
         </sect2>
 
         <sect2 xml:id="systemAdministrationEmail">
@@ -9657,8 +9605,7 @@ mysql>
             following:</para>
 
           <informalexample>
-            <programlisting>
-; Use SMTP for sending mail instead of mail()
+            <programlisting>; Use SMTP for sending mail instead of mail()
 smtp = On
     
 ; SMTP server settings
@@ -9677,13 +9624,13 @@ smtp_password = password
             type, username and password) from your ISP.</para>
 
           <para>To allow for notification of bounced emails (sent to the email address specified in
-            <!-- LINK HERE --> Journal Setup 1.4) you will have to uncomment and enable the
-              <code>envelope_sender</code> configuration option; you may also want to provide a
-            default email address.</para>
+              <link linkend="journalManagementSetup1-4">Journal Setup 1.4</link>) you will have to
+            uncomment and enable the <code>envelope_sender</code> configuration option in
+              <filename>config.inc.php</filename>; you may also want to provide a default email
+            address.</para>
 
           <informalexample>
-            <programlisting>
-; Allow envelope sender to be specified
+            <programlisting>; Allow envelope sender to be specified
 ; (may not be possible with some server configurations)
 allow_envelope_sender = On
 
@@ -9706,8 +9653,7 @@ default_envelope_sender = my_address@my_host.com
             to the following:</para>
 
           <informalexample>
-            <programlisting>
-[captcha]
+            <programlisting>[captcha]
 
 ; Whether or not to enable Captcha features
 captcha = On
@@ -9719,8 +9665,7 @@ captcha_on_register = On
 captcha_on_comments = On
 
 ; Font location for font to use in Captcha images
-font_location = /usr/share/fonts/truetype/freefont/FreeSerif.ttf
-                        </programlisting>
+font_location = /usr/share/fonts/truetype/freefont/FreeSerif.ttf</programlisting>
 
             <para>Please note that your server needs to support the IMLIB library for this to work,
               and that you need to point your <code>font_location</code> variable to a font that
@@ -9742,14 +9687,17 @@ font_location = /usr/share/fonts/truetype/freefont/FreeSerif.ttf
                 the top of the root <filename>index.php</filename> file:</para>
 
               <informalexample>
-                <programlisting>
-ini_set('display_errors', E_ALL);
-                        </programlisting>
+                <programlisting>ini_set('display_errors', E_ALL);</programlisting>
               </informalexample>
 
               <para>When you rerun the task or reload the page you were having problems with, any
                 PHP error messages that were being sent to the log files should now be displayed on
                 the web page.</para>
+
+              <note>
+                <para>Of course, you can always check your server's error log for errors as
+                  well.</para>
+              </note>
             </listitem>
           </itemizedlist>
 
@@ -9764,8 +9712,7 @@ ini_set('display_errors', E_ALL);
 
               <informalexample>
                 <programlisting>; Enable database debug output (very verbose!)
-debug = On
-                        </programlisting>
+debug = On</programlisting>
               </informalexample>
 
               <para>Turning database debugging on will display every database query for that
@@ -9776,23 +9723,25 @@ debug = On
               <para>With debug turned on, certain parts of the system may not function (for example,
                 trying to log in). The debug option should only be used to try and diagnose a
                 problem and may expose private information. Additionally, as the warning in the
-                config file suggests, it is very verbose -- it prints out every database query
+                config file suggests, it is very verbose - it prints out every database query
                 regardless of whether the system has encountered an error, and so should not be
                 turned on by default.</para>
             </listitem>
 
             <listitem>
               <para>Turning on <code>show_stats</code> (Under <code>Debug Settings</code> at the end
-                of <filename>config.inc.php</filename>) will display two execution stats in your
-                footer: the time taken to generate the page, and the number of database queries. You
-                may also see other warnings printed in the footer, such as if a locale key is
-                missing.</para>
+                of <filename>config.inc.php</filename>) will display execution stats provided by the
+                included <link xlink:href="http://particletree.com/features/php-quick-profiler/">PHP
+                  Quick Profiler</link>.</para>
 
               <informalexample>
                 <programlisting>; Display execution stats in the footer
-show_stats =  On
-                        </programlisting>
+show_stats =  On</programlisting>
               </informalexample>
+
+              <para>The Profiler will give you information and metrics on load times, database
+                queries, files included, and more, and is useful for pinpointing bottlenecks and
+                other points of failure.</para>
             </listitem>
 
             <listitem>
@@ -9825,656 +9774,12 @@ show_stats =  On
           on.</para>
 
         <para>Most plugins operate at the Journal Manager level, and require no additional system
-          configuration -- that is, Journal Managers can enable and configure them once they are
-          installed -- but some plugins require additional configuration at the system level. An
-          example of a plugin that needs system configuration would be the COUNTER plugin (found in
-            <filename>plugins/generic/counter</filename>), which requires a server-writeable logfile
-          to be created on the server. For more information, you should consult the plugin's
-          documentation.</para>
+          configuration - that is, Journal Managers can enable and configure them once they are
+          installed - but some plugins require additional configuration at the system level, or are
+          only operable by Site Administrators. For more information, you should consult the
+          plugin's documentation.</para>
       </sect1>
     </chapter>
   </part>
-
-  <part xml:id="specialTopics">
-    <title>Special Topics</title>
-    <chapter xml:id="translating">
-      <title>Translating OJS</title>
-      <para> </para>
-    </chapter>
-    <chapter xml:id="customizing">
-      <title>Customizing OJS</title>
-      <para/>
-    </chapter>
-    <chapter xml:id="importExport">
-      <title>Importing and Exporting Data</title>
-      <sect1 xml:id="importExportIntroduction">
-        <title>Introduction</title>
-        <para>Open Journal Systems ships with five different Import/Export plugins which allow the
-          Journal Manager to inject data into and extract data from OJS. More information can be
-          found for each plugin's documentation within OJS' plugin directory
-            (<filename>plugins/</filename>).</para>
-        <para>Import/export functionality is also available as a command-line tool; see
-            <filename>tools/importExport.php</filename> and the <link linkend="commandline">command
-            line</link> section for more information.</para>
-      </sect1>
-
-      <sect1 xml:id="articlesIssues">
-        <title>Articles and Issues XML Plugin</title>
-        <sect2 xml:id="articlesIssuesImporting">
-          <title>Importing Articles and Issues</title>
-          <para>OJS features the ability to directly import metadata describing articles and issues
-            for your journal. This can be extremely useful when you are adding back issues to your
-            journal, and do not want to go through the standard OJS editorial process. To do this,
-            you will have to have a basic understanding of XML.</para>
-          <note>
-            <para>There is another way to expedite the submission process and publish material
-              quickly which does not depend on making XML files, and may be of use if you only have
-              a handful of items to import. You can view complete instructions <link
-                linkend="expeditedSubmission">here</link>.</para>
-          </note>
-
-          <sect3 xml:id="articlesIssuesCreating">
-            <title>Creating the XML Import File</title>
-
-            <para>The Articles and Issues XML Plugin is the primary method for batch importing and
-              exporting article-level content. It can be used to import and export single or
-              multiple issues and/or articles, including comprehensive metadata. You can view the
-              complete DTD here: <filename>plugins/importexport/native/native.dtd</filename>.
-                <filename>native.dtd</filename> supports the following as root elements:
-                <userinput><![CDATA[<article>]]></userinput>,
-                <userinput><![CDATA[<articles>]]></userinput>,
-                <userinput><![CDATA[<issue>]]></userinput> and
-                <userinput><![CDATA[<issues>]]></userinput>.</para>
-
-            <para>You can view a sample XML article import file in <link linkend="nativeSample"
-                >appendix A</link>, and also in your OJS installation:
-                <filename>plugins/importexport/native/sample.xml</filename>. </para>
-
-            <para>There are a handful of things you should be mindful of when importing data.</para>
-
-            <itemizedlist>
-              <listitem>
-                <para> Be sure to define the document type appropriately using
-                    <userinput><![CDATA[<!DOCTYPE ...>]]></userinput>.</para>
-              </listitem>
-
-              <listitem>
-                <para>Your XML file should UTF8-encoded.</para>
-              </listitem>
-              <listitem>
-                <para>Your XML file must validate. Most *nix systems have access to the <link
-                    xlink:href="http://xmlsoft.org/xmllint.html">xmllint</link> program for
-                  validation; there are also a number online XML validators, such as <link
-                    xlink:href="http://www.validome.org/xml/">Validome</link>; and many XML editing
-                  tools such as <link xlink:href="http://www.oxygenxml.com/">Oxygen XML</link> and
-                    <link xlink:href="http://www.altova.com">XMLspy</link> can also validate XML
-                  files. </para>
-              </listitem>
-
-              <listitem>
-                <para>Dates should be specified as YYYY-MM-DD.</para>
-              </listitem>
-              <listitem>
-                <para>To import a file, you can use <userinput><![CDATA[<embed>]]></userinput> to
-                  place a file directly within your XML document, or use
-                    <userinput><![CDATA[<href>]]></userinput> to link to one. </para>
-
-                <para>If you use the <userinput><![CDATA[<embed>]]></userinput> tag you will have to
-                  base64-encode your files. Using <userinput><![CDATA[<embed>]]></userinput> with a
-                  base64-encoded file would look something like this:</para>
-
-                <example xml:id="embedImport">
-                  <title>Using the <userinput><![CDATA[<embed>]]></userinput> tag to import a
-                    file</title>
-                  <programlisting>
-<![CDATA[<galley>
-    <label>PDF</label>
-    <file>
-        <embed encoding="base64" filename="my_file.pdf" mime_type="application/pdf">PGxpPjxCPlc8Zm9ukjfdaSD...(and so on)</embed>
-    </file>        
-<galley> ]]></programlisting>
-                </example>
-
-
-                <para>You can link to full URLs as well as local files using
-                    <userinput><![CDATA[<href>]]></userinput>. A full URL link would look like the
-                  following:</para>
-
-                <example xml:id="hrefImportUrl">
-                  <title>Using the <userinput><![CDATA[<href>]]></userinput> tag to import via
-                    URL</title>
-
-                  <programlisting>
-<![CDATA[<galley>
-    <label>PDF</label>
-    <file>
-        <href src="http://www.example.com/import_files/my_file.pdf" mime_type="application/pdf"/>
-    </file>        
-<galley>]]></programlisting>
-                </example>
-
-
-                <para>You can use local linking if your galleys are already stored on the
-                  destination machine. Importing a local file would look like the following:</para>
-
-                <example xml:id="hrefImportLocal">
-                  <title>Using the <userinput><![CDATA[<href>]]></userinput> tag to import a local
-                    file</title>
-                  <programlisting>
-<![CDATA[<galley>
-    <label>PDF</label>
-    <file>
-        <href src="/home/johndoe/import/my_file.pdf"/>
-    </file>
-<galley>]]></programlisting>
-                </example>
-              </listitem>
-
-              <listitem>
-                <para>For importing HTML galleys, use the
-                    <userinput><![CDATA[<htmlgalley>]]></userinput> element. Otherwise, use the
-                    <userinput><![CDATA[<galley>]]></userinput> element (ie., for PDF/Postscript,
-                  audio, video and other files).</para>
-              </listitem>
-              <listitem>
-                <para>Some elements can support embedded HTML tags, such as the abstract element. If
-                  you do embed HTML within your document, remember to wrap the HTML within
-                    <userinput><![CDATA[<![CDATA[]]]]><![CDATA[>]]></userinput> tags.</para>
-              </listitem>
-              <listitem>
-                <para>To add empty data to required fields, you can use the
-                    <userinput><![CDATA[<![CDATA[]]]]><![CDATA[>]]></userinput> tag as well.</para>
-
-                <example xml:id="addEmptyTag">
-                  <title>Using the <userinput><![CDATA[<![CDATA[]]]]><![CDATA[>]]></userinput> tag
-                    to add empty data to the required email field</title>
-                  <programlisting>
-<![CDATA[<author primary_contact="true">
-    <firstname>Jane</firstname>
-    <lastname>Doe</lastname>
-    <email><![CDATA[]]]]><![CDATA[></email>
-    <biography locale="en_US">Jane Doe's  Bio statement...</biography>
-</author>]]>     
-</programlisting>
-                </example>
-              </listitem>
-              <listitem>
-                <para>If you make any typographical errors in the data you are trying to import, you
-                  may end up with duplicate or split entries: for example, if your journal already
-                  has a section "Articles" with the initials ART, but you mistype in your XML file
-                    <userinput><![CDATA[<abbrev locale="en_US">AR</abbrev>]]></userinput> instead of
-                    <userinput><![CDATA[<abbrev locale="en_US">ART</abbrev>]]></userinput>, a new
-                  journal section with the initials AR will be created, and that one article will be
-                  added to it. This can be easily fixed pre-import, but difficult to clean up after.
-                </para>
-              </listitem>
-
-            </itemizedlist>
-
-
-
-
-          </sect3>
-          <sect3 xml:id="articlesIssuesImportingWeb">
-            <title>Importing Articles and Issues From the Web</title>
-
-
-            <para>The Articles and Issues XML Plugin can be used from the web, from the Journal
-              Manager's User Home:</para>
-
-            <orderedlist>
-              <listitem>
-                <para>Login as the Journal Manager and from your User Home choose
-                    <userinput>Import/Export Data</userinput>. </para>
-              </listitem>
-              <listitem>
-                <para>Then, choose the <userinput>Articles and Issues XML Plugin</userinput>
-                  link.</para>
-              </listitem>
-              <listitem>
-                <para>Upload your XML file (e.g., <filename>ojsV1N1.xml</filename>).</para>
-              </listitem>
-            </orderedlist>
-
-            <para>You will be notified of any errors, or if the import was successful.</para>
-
-          </sect3>
-
-
-        </sect2>
-        <sect2 xml:id="articlesIssuesExporting">
-          <title>Exporting Articles and Issues From the Web</title>
-
-          <para>You can export either single or multiple articles and/or issues from the Journal
-            Manager's User Home:</para>
-
-          <orderedlist>
-            <listitem>
-              <para>Login as the Journal Manager and from your User Home choose
-                  <userinput>Import/Export Data</userinput>. </para>
-            </listitem>
-            <listitem>
-              <para>Then, choose the <userinput>Articles and Issues XML Plugin</userinput>
-                link.</para>
-            </listitem>
-            <listitem>
-              <para>You will be provided with the options to <userinput>Export Issues</userinput> or
-                  <userinput>Export Articles</userinput>. Depending on what you choose, you will be
-                able to export either single or multiple articles, or single or multiple issues at a
-                time. These will be exported in XML format, and can be imported to this or another
-                journal at a later date.</para>
-            </listitem>
-          </orderedlist>
-          <note>
-            <para>sing this plugin to export articles and issues will not only export all relevant
-              metadata, but will include all article files (HTML, PDF, etc.) embedded within the XML
-              document in Base64 encoding. This can result in large, cumbersome XML files,
-              especially when multiple issues are exported at once. Opening them in an editor to
-              view or change any XML data or metadata may be taxing for your computer, and it may
-              take some time to download and/or upload said files, depending on your connection and
-              the resources of the source server.</para>
-          </note>
-
-        </sect2>
-      </sect1>
-
-      <sect1 xml:id="expeditedSubmission">
-        <title>Using the Web-based Expedited Submission Process</title>
-        <para>If you only have a handful of files to import quickly, or if you don't want to depend
-          on making XML files to import articles and issues, there is another way to expedite the
-          submissions, available to Journal Managers from the 5-step Author Submission process. </para>
-
-        <para>First, make sure you are logged in as a user who is enrolled as both an Editor and an
-          Author. From your User Home, choose the Author Role, and start a submission. Fill out the
-          first two steps of the Author Submission Process as you normally would, keeping in mind
-          that you may need to modify the author metadata information if you are not the original
-          author.</para>
-
-        <para>When you reach Step 3 of the submission Process ("Uploading the Submission"), you
-          should upload a galley file, as the file you upload here will appear in the final
-          copyediting queue as both an Initial Copedit file, and as a Galley file. You will still be
-          able to edit, add and remove any galley files at a later step, however. Please note, if
-          you do not upload a file at this point, you will not have the option of expediting the
-          submission process once you are done.</para>
-
-        <para>Finish the rest of the submission process as normal. If you have uploaded a file, upon
-          completion of Step 5 you will be presented with the option to move the submission directly
-          to the last step of the Editing Queue. Clicking that link will take you from the
-          submission process to the Editing queue.</para>
-
-        <para>The file you uploaded appears both under Copyediting as an Initial Copyedit file, and
-          under Layout, as a Galley file. For publishing's sake it is the galley file you are
-          interested in. Double-check that the file format has been correctly identified (normally
-          either PDF or HTML), view the proof, and upload any other galley files at this time as
-          well.</para>
-
-        <para>You can then schedule the submission under Scheduling, as you would for any other
-          reviewed, copyedited file, and it will appear as soon as the issue it has been assigned to
-          is published. In the case of it being assigned to an already-published issue, it will
-          appear immediately in that issue's Table of Contents.</para>
-
-      </sect1>
-
-      <sect1 xml:id="users">
-        <title>Users XML Plugin</title>
-        <para>The Users XML Plugin can be used to import and export users and their roles. See the
-          XML DTD in <filename>plugins/importexport/users/users.dtd</filename> for more information,
-          as well as the sample file in <filename>plugins/importexport/users/sample.xml</filename>
-          and in <link linkend="userSample">Appendix B</link>.</para>
-
-        <sect2 xml:id="UsersImportingWeb">
-          <title>Importing Users</title>
-
-          <para>You can import single or multiple users from the Journal Manager's User Home:</para>
-
-          <orderedlist>
-            <listitem>
-              <para>Login as the Journal Manager and from your User Home choose
-                  <userinput>Import/Export Data</userinput>. </para>
-            </listitem>
-            <listitem>
-              <para>Then, choose the <userinput>Users XML Plugin</userinput> link.</para>
-            </listitem>
-            <listitem>
-              <para>You will find the option to upload an XML User Data file underneath the Export
-                Users section on the Users XML Plugin page.</para>
-            </listitem>
-          </orderedlist>
-          <sect3 xml:id="UsersCreating">
-            <title>Creating the Import Users XML File</title>
-            <para>The Users XML Plugin can be used to import and export single or multiple users.
-              You can view the complete DTD here:
-                <filename>plugins/importexport/users/users.dtd</filename>. The root element is
-                <userinput><![CDATA[<users>]]></userinput>.</para>
-
-            <para>You can view a sample XML user import file in <link linkend="userSample">Appendix
-                B</link>, and also in your OJS installation at
-                <filename>plugins/importexport/users/sample.xml</filename>. </para>
-
-            <para>There are a handful of things you should be mindful of when importing user
-              data.</para>
-
-            <itemizedlist>
-              <listitem>
-                <para> Be sure to define the document type appropriately using
-                    <userinput><![CDATA[<!DOCTYPE ...>]]></userinput>.</para>
-              </listitem>
-
-              <listitem>
-                <para>Your XML file should UTF8-encoded.</para>
-              </listitem>
-              <listitem>
-                <para>Your XML file must validate. Most *nix systems have access to the <link
-                    xlink:href="http://xmlsoft.org/xmllint.html">xmllint</link> program for
-                  validation; there are also a number online XML validators, such as <link
-                    xlink:href="http://www.validome.org/xml/">Validome</link>; and many XML editing
-                  tools such as <link xlink:href="http://www.oxygenxml.com/">Oxygen XML</link> and
-                    <link xlink:href="http://www.altova.com">XMLspy</link> can also validate XML
-                  files. </para>
-              </listitem>
-              <listitem>
-                <para><userinput><![CDATA[<firstname>]]></userinput>,
-                    <userinput><![CDATA[<lastname>]]></userinput> and
-                    <userinput><![CDATA[<email>]]></userinput> are mandatory.</para>
-              </listitem>
-              <listitem>
-                <para>Usernames and passwords are optional, and will be generated automatically if
-                  omitted.</para>
-              </listitem>
-              <listitem>
-                <para>If you allow the system to generate usernames and passwords for the users you
-                  are uploading, you can optionally allow the system to email the users with their
-                  account credentials. This option can be found on the Users XML Plugin Page ("Send
-                  a notification email to each imported user containing the user's username and
-                  password.").</para>
-              </listitem>
-
-              <listitem>
-                <para>You can require the user change their password when they next log in by
-                  setting the password attribute "change" to "true":
-                    <userinput><![CDATA[<password change="true">myoldpassword</password>]]></userinput></para>
-
-              </listitem>
-              <listitem>
-                <para>The default password encryption is "plaintext" (ie., none). Encrypted assumes
-                  it was encrypted by Validation::encryptCredentials() and is using the same
-                  encryption algorithm used by the system. </para>
-              </listitem>
-              <listitem>
-                <para>if the imported file contains any usernames or email addresses that already
-                  exist in the system, the user data for those users will not be imported and any
-                  new roles to be created will be assigned to the existing users.</para>
-              </listitem>
-            </itemizedlist>
-          </sect3>
-
-
-        </sect2>
-
-
-        <sect2 xml:id="UsersExporting">
-          <title>Exporting Users From the Web</title>
-          <para>You can export users by one or more roles, or export all users at once. To export
-            one or more roles, simply choose the roles you want exported by clicking (or
-            Ctrl-clicking, if more than one role) the role in the role list and then clicking
-              <userinput>Export Users</userinput>. To export all users, click the <userinput>Export
-              All</userinput> link.</para>
-
-          <para>Passwords will be encrypted using MD5 or SHA-1 encryption, depending on what system
-            the journal is using.</para>
-        </sect2>
-      </sect1>
-
-      <sect1 xml:id="crossref">
-        <title>CrossRef XML Export Plugin</title>
-        <para>The Crossref XML Export Plugin provides an export plugin to generate metadata
-          information for Articles and Issues for indexing in CrossRef. Details on the XML format
-          and data requirements is available at <link xlink:href="http://www.crossref.org/schema"
-            >http://www.crossref.org/schema</link>. More information on this plugin can be found in
-            <filename>plugins/importexport/crossref</filename>.</para>
-
-        <para>A valid DOI prefix must be specified in the Journal Setup in order to use this
-          plugin.</para>
-
-        <para>The DOI (Digital Object Identifier) Prefix is assigned by CrossRef and is in the
-          format 10.xxxx (e.g. 10.1234). </para>
-
-        <sect2 xml:id="crossrefExportingWeb">
-          <title>Exporting Crossref Information From the Web</title>
-          <para>The Crossref XML Plugin can be used from the web, from the Journal Manager's User
-            Home:</para>
-
-          <orderedlist>
-            <listitem>
-              <para>Login as the Journal Manager and from your User Home choose
-                  <userinput>Import/Export Data</userinput>. </para>
-            </listitem>
-            <listitem>
-              <para>Then, choose the <userinput>Crossref XML Export Plugin</userinput> link.</para>
-            </listitem>
-            <listitem>
-              <para>If you have entered your Crossref DOI Prefix in your Journal Setup, you will be
-                provided with the options to <userinput>Export Issues</userinput> or
-                  <userinput>Export Articles</userinput>. Depending on what you choose, you will be
-                able to export either single or multiple articles, or single or multiple issues at a
-                time. These will be exported in XML format.</para>
-            </listitem>
-          </orderedlist>
-        </sect2>
-      </sect1>
-
-      <sect1 xml:id="erudit">
-        <title>Erudit Article Export Plugin</title>
-        <para>The Erudit Article Export Plugin implements single-article export for full-text
-          indexing using Erudit's XML DTD. See <link xlink:href="http://www.erudit.org"
-            >http://www.erudit.org</link> for more information.</para>
-        <sect2 xml:id="eruditExportingWeb">
-          <title>Exporting Erudit Information From the Web</title>
-          <para>The Erudit XML Plugin can be used from the web, from the Journal Manager's User
-            Home:</para>
-
-          <orderedlist>
-            <listitem>
-              <para>Login as the Journal Manager and from your User Home choose
-                  <userinput>Import/Export Data</userinput>. </para>
-            </listitem>
-            <listitem>
-              <para>Then, choose the <userinput>Erudit Article XML Export Plugin</userinput>
-                link.</para>
-            </listitem>
-            <listitem>
-              <para>You will then be presented with a list of published articles, and links to the
-                XML export for each individual article galley. It is not currently possible to
-                export whole articles or issues.</para>
-            </listitem>
-          </orderedlist>
-        </sect2>
-
-      </sect1>
-
-      <sect1 xml:id="pubmed">
-        <title>PubMed XML Export Plugin</title>
-        <para>The PubMed XML Export Plugin provides an import/export plugin to generate
-          bibliographic information for articles in PubMed standard publisher data format XML for
-          indexing in NLM PubMed/MEDLINE. Details on the XML format and data requirements is
-          available at: <link xlink:href="http://www.ncbi.nlm.nih.gov/entrez/query/static/spec.html"
-            >http://www.ncbi.nlm.nih.gov/entrez/query/static/spec.html</link>. More information on
-          this plugin can be found in <filename>plugins/importexport/pubmed</filename>.</para>
-
-        <sect2 xml:id="pubmedExportingWeb">
-          <title>Exporting Pubmed Information From the Web</title>
-          <para>The Pubmed XML Plugin can be used from the web, from the Journal Manager's User
-            Home:</para>
-
-          <orderedlist>
-            <listitem>
-              <para>Login as the Journal Manager and from your User Home choose
-                  <userinput>Import/Export Data</userinput>. </para>
-            </listitem>
-            <listitem>
-              <para>Then, choose the <userinput>Pubmed XML Export Plugin</userinput> link.</para>
-            </listitem>
-            <listitem>
-              <para>You will be provided with the options to <userinput>Export Issues</userinput> or
-                  <userinput>Export Articles</userinput>. Depending on what you choose, you will be
-                able to export either single or multiple articles, or single or multiple issues at a
-                time. These will be exported in XML format.</para>
-            </listitem>
-          </orderedlist>
-        </sect2>
-      </sect1>
-
-      <sect1 xml:id="commandline">
-        <title>Using the Plugins from the Command Line</title>
-        <para>Import/export plugins can normally also be run from the command line. You can view the
-          applicable plugin names by running the following command:</para>
-        <para>
-          <command>php tools/importExport.php list</command>
-        </para>
-
-        <para>You can see usage parameters by running the following command:</para>
-        <para>
-          <command>php tools/importExport.php [PluginName] usage</command>
-        </para>
-      </sect1>
-
-      <sect1 xml:id="nativeSample">
-        <title>Example Articles and Issues Import file</title>
-        <para>This file can also be found in
-            <filename>plugins/importexport/native/sample.xml</filename>.</para>
-        <programlisting>
-    <![CDATA[
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE issues SYSTEM "native.dtd">
-<!--
-    * sample.xml
-    *
-    * Copyright (c) 2003-2007 John Willinsky
-    * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
-    *
-    * Sample import document for the OJS 2.x native XML import/export format.
-    *
-    * $Id: importexport.xml,v 1.1 2008/07/04 06:02:32 asmecher Exp $
--->
-<issues>
-    <issue published="true" current="false" identification="title">
-        <title locale="en_US">Test Issue</title>
-        <access_date>01-01-2001</access_date>
-        <section>
-            <title locale="en_US">Articles</title>
-            <abbrev locale="en_US">ART</abbrev>
-            <article>
-                <title locale="en_US">Jane Doe's Article Title</title>
-                <abstract locale="en_US">Jane Doe's Article Abstract...</abstract>
-                <date_published>2004-10-05</date_published>
-                <author primary_contact="true">
-                    <firstname>Jane</firstname>
-                    <lastname>Doe</lastname>
-                    <email>JaneDoe@sample.test</email>
-                    <biography locale="en_US">Jane Doe's  Bio statement...</biography>
-                </author>
-                <indexing>
-                    <discipline locale="en_US">Education; Literature Education</discipline>
-                    <subject locale="en_US">Young adult literature; Holocaust</subject>
-                    <coverage>
-                        <geographical locale="en_US">North America</geographical>
-                        <chronological locale="en_US">Contempoary</chronological>
-                        <sample locale="en_US">Adolescent readers</sample>
-                    </coverage>
-                </indexing>
-                <htmlgalley locale="en_US">
-                    <label>HTML</label>
-                    <file>
-                        <href src="myfile.html" mime_type="text/html"/>
-                    </file>
-                    <stylesheet>
-                        <href src="myfile.xsl" mime_type="text/xsl"/>
-                    </stylesheet>
-                    <image>
-                        <embed encoding="base64" filename="myfilename.png" mime_type="application/png">(base64-encoded data would appear here)
-                        </embed>
-                    </image>
-                    <image>
-                        <href src="myimage2.png" mime_type="application/png"/>
-                    </image>
-                </htmlgalley>
-                <galley locale="en_US">
-                    <label>PDF</label>
-                    <file>
-                        <href src="mygalley.pdf" mime_type="application/pdf"/>
-                    </file>
-                </galley>
-            </article>
-        </section>
-    </issue>
-</issues>    
-]]>
-</programlisting>
-      </sect1>
-
-      <sect1 xml:id="userSample">
-        <title>Example Users Import XML File</title>
-        <para>This file can also be found in <filename>plugins/importexport</filename>.</para>
-        <programlisting>
-    
-   <![CDATA[
-   <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE users SYSTEM "users.dtd">
-
-<!--
-  * sample.xml
-  *
-  * Copyright (c) 2003-2007 John Willinsky
-  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
-  *
-  * Sample user import data.
-  *
-  * $Id: importexport.xml,v 1.1 2008/07/04 06:02:32 asmecher Exp $
-  -->
-
-<users>
-        <user>
-		<username>testuser1</username>
-		<password>ojsojs</password>
-		<salutation>Dr.</salutation>
-		<first_name>TestUser1FirstName</first_name>
-		<last_name>TestUser1LastName</last_name>
-		<gender>F</gender>
-		<affiliation>TestUser1Affiliation</affiliation>
-		<email>testuser1@ojsdev.bb</email>
-		<country>DE</country>
-		<discipline>C4</discipline>
-		<biography locale="de_DE">My biograhy (German) - TestUser1.</biography>
-		<biography locale="en_US">My biograhy (English) - TestUser1.</biography>
-		<biography locale="es_ES">My biograhy (Spanish) - TestUser1.</biography>
-		<role type="author"/>
-	</user>
-	<user>
-		<username>testuser2</username>
-		<password encrypted="sha1">efe7d096996561e621764052b451ff752b03652f</password>
-		<salutation>Dr.</salutation>
-		<first_name>TestUser2FirstName</first_name>
-		<last_name>TestUser2LastName</last_name>
-		<gender>F</gender>
-		<affiliation>TestUser2Affiliation</affiliation>
-		<email>testuser2@ojsdev.bb</email>
-		<country>DE</country>
-		<discipline>C4</discipline>
-		<biography locale="de_DE">My biograhy (German) - TestUser2.</biography>
-		<biography locale="en_US">My biograhy (English) - TestUser2.</biography>
-		<biography locale="es_ES">My biograhy (Spanish) - TestUser2.</biography>
-		<userLocales>de_DE:en_US</userLocales>
-		<role type="author"/>
-        </user>
-</users>
-]]>
-</programlisting>
-
-      </sect1>
-    </chapter>
-    <chapter xml:id="paymentsSubscriptions">
-      <title>Payments and Subscriptions</title>
-      <para/>
-    </chapter>
-  </part>
+  
 </book>
