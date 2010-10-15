@@ -6,8 +6,6 @@
     * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
     *
     * OJS Userguide
-    *
-    * $Id$
 -->
 <book version="5.0" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:ns5="http://www.w3.org/1999/xhtml" xmlns:ns4="http://www.w3.org/1998/Math/MathML"
@@ -37,9 +35,9 @@
       </author>
     </authorgroup>
 
-    <pubdate>June 9 2010</pubdate>
+    <pubdate>September 29 2010</pubdate>
 
-    <releaseinfo>1st Edition</releaseinfo>
+    <releaseinfo>2nd Edition, for OJS 2.3.3</releaseinfo>
 
     <publisher>
       <publishername>The Public Knowledge Project</publishername>
@@ -49,7 +47,7 @@
                 <street>8888 University Drive</street>
                 <postcode>V5A 1S6</postcode>
                 <country>Canada</country>
-                <email>pkp-support@sfu.ca</email>
+                <email>pkp.contact@gmail.com</email>
             </address>
     </publisher>
 
@@ -103,16 +101,15 @@
     <para>For more information, please see the <link xlink:href="http://pkp.sfu.ca">Public Knowledge
         Project website</link>. For contact information, please see the <link
         xlink:href="http://pkp.sfu.ca/contact">contact page</link>.</para>
-    
+
     <para>
       <mediaobject>
         <imageobject>
           <imagedata align="center" fileref="../common/logo_list.png" format="PNG"/>
         </imageobject>
         <textobject>
-          <phrase>Simon Fraser University Library; UBC Faculty of Education; Canadian
-            Centre for Studies in Publishing; Standford University; Arizona State
-            University</phrase>
+          <phrase>Simon Fraser University Library; UBC Faculty of Education; Canadian Centre for
+            Studies in Publishing; Standford University; Arizona State University</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -177,8 +174,88 @@
         </orderedlist>
       </sect1>
 
-      <sect1 xml:id="overviewSystermOverview">
-        <title>System Overview</title>
+      <sect1 xml:id="overviewWhatsNew">
+        <title>What's New in 2.3.3</title>
+        <para>Some of the many new features in OJS 2.3.3 include:</para>
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Article view enhancements</emphasis>. The old frame-based
+              article view has been removed in favour of a less obtrusive way of <link
+                linkend="overviewViewingOverview">displaying HTML and PDF articles</link> and
+              associated reading tools. This includes a new full-screen view option for PDF files, compatible
+              with mobile devices.</para>
+              <para>The Reading Tools themselves have been <link linkend="readerReadingTools">redesigned
+                graphically</link>, and have been moved into the <link
+                  linkend="journalManagementDisplayReadingTools">block display infrastructure</link>
+              so that their placement can be easily configured. </para>
+          </listitem>
+          <listitem>
+            <para><emphasis role="bold">A new Citation Markup Assistant</emphasis>. Editors can use
+              this new tool to <link linkend="sectionEditorReferences">parse, edit and export</link>
+              citations <link linkend="authorSubmission3">provided separately by Authors</link> into
+              NLM XML or citation style-specific formats for inclusion in article galleys. This new
+              tool must be <link linkend="journalManagementSetup3-7">configured by the Journal
+                Manager</link> before it will work.</para>
+          </listitem>
+          <listitem>
+            <para><emphasis role="bold">A new book review solicitation and workflow
+                plugin</emphasis>. OJS now includes a <link
+                linkend="journalManagementBooksForReview">Books for Review</link> plugin to help
+              with the entire pre-submission book review workflow process. Editors can add books
+              received from publishers; Authors can request them for review; book mailings can be
+              managed; due dates and email reminders can be set; and reviewed books can be tied to
+              author submissions. This plugin will be of help for any journal that wants to keep
+              readers notified of new books in the field and correspondingly wants to encourage
+              reviews.</para>
+          </listitem>
+          <listitem>
+            <para><emphasis role="bold">A new way to deposit content into digital
+                repositories</emphasis>. OJS now includes a <link linkend="journalManagementSword"
+                >SWORD plugin</link> that allows authors and Journal Managers alike to deposit
+              content into SWORD-compliant digital repositories such as DSpace and Fedora.</para>
+          </listitem>
+          <listitem>
+            <para><emphasis role="bold">New user management functionality</emphasis>. New features
+              and updates include a new batch merge option to the Journal Manager's <link
+                linkend="journalManagementUserMerge">Merge Users</link> function, allowing multiple
+              accounts to be merged at once; refinements to the <link linkend="editorNotifyUsers"
+                >Notify Users</link> functionality available to Editors; a new email confirmation
+              step in the user registration process, to prevent broken emails from being added to
+              the system; and more. </para>
+          </listitem>
+          <listitem>
+            <para><emphasis role="bold">A new Article View report</emphasis>. Journal Managers can
+              now <link linkend="journalManagementReports">generate a CSV report</link> on how many
+              times article abstracts and galleys for published articles have been viewed or
+              downloaded. The report provides separate counts for all galley types that the journal
+              uses (PDF, HTML, DOC, ODT, etc.).</para>
+          </listitem>
+          <listitem>
+            <para><emphasis role="bold">Improved multilingual support for submissions</emphasis>.
+              Journal Managers can now <link linkend="journalManagementLanguages">configure which
+                language(s) submissions are accepted in</link>; Authors can <link
+                linkend="authorSubmission1">choose any enabled language</link> as their submission
+              language; and Authors can optionally fill in submission metadata in all supported
+              languages.</para>
+          </listitem>
+          <listitem>
+            <para><emphasis role="bold">New Refback enhancements</emphasis>. Journal Managers can
+              now configure <link linkend="journalManagementReferral">exclusion settings</link> to
+              limit refback clutter; and the Author's refback interface is now paged, for easier
+              management.</para>
+          </listitem>
+          <listitem>
+            <para><emphasis role="bold">Control over publication of Masthead emails</emphasis>.
+              Journal Managers can now control whether the emails of any group in the masthead are
+                <link linkend="journalManagementMasthead">publicly available or not</link>. </para>
+          </listitem>
+        </itemizedlist>
+        <para>For a full list of features and bugfixes, see
+          <filename>docs/RELEASE</filename>.</para>
+      </sect1>
+
+      <sect1 xml:id="overviewViewingOverview">
+        <title>Viewing and Reading Overview</title>
 
         <para>By default, Open Journal Systems is installed with a very simple, functional user
           interface. This includes a top header, a top navigation bar, a series of navigation blocks
@@ -197,16 +274,58 @@
           </mediaobject>
         </figure>
 
-        <para>The next image shows the HTML version of an article from the table of contents,
-          including the Reading Tools in the right column. PDF documents can also be made
-          available.</para>
+        <para>The next images show HTML and PDF versions of an article from the table of contents,
+          including the Reading Tools in the right column.</para>
 
         <figure>
           <title>Open Journal Systems HTML Article View</title>
-
           <mediaobject>
             <imageobject>
-              <imagedata align="center" fileref="figures/ojs_demo_article.png" format="PNG"/>
+              <imagedata align="center" fileref="figures/reader_readingtools.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <figure>
+          <title>Open Journal Systems PDF Article View</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata align="center" fileref="figures/reader_readingtoolsPDF.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>PDFs can also be view in a full-screen mode, for a more present, uninterrupted reading
+          experience.</para>
+
+        <figure>
+          <title>Open Journal Systems PDF Article View -- Full-screen</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata align="center" fileref="figures/reader_readingtoolsPDF_full.png"
+                format="PNG"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Finally, it's worth noting that both HTML and PDF galleys can be easily read on mobile
+          devices, without the need of any special apps (aside from a web browser, of
+          course).</para>
+
+        <figure>
+          <title>Open Journal Systems HTML on iPhone</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata align="center" fileref="figures/reader_html_iphone.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <figure>
+          <title>Open Journal Systems PDF on iPhone</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata align="center" fileref="figures/reader_pdf_iphone.png" format="PNG"/>
             </imageobject>
           </mediaobject>
         </figure>
@@ -890,8 +1009,8 @@
             Manager or Site Administrator.</para>
 
           <para>All fields with an asterisk beside them (Username; Password; Repeat Password; First
-            Name; Last Name; Email) are mandatory. If the journal is multlingual, you will need to
-            select your preferred language.</para>
+            Name; Last Name; Email; Confirm Email) are mandatory. If the journal is multilingual,
+            you will need to select your preferred language.</para>
 
           <figure>
             <title>Filling out the Registration Form</title>
@@ -1434,11 +1553,12 @@
           <sect3 xml:id="siteAdministrationMergeUsers">
             <title>Merging Users</title>
 
-            <para>This page allows you to merge two user accounts into one, handy if a user has
-              accidentally created two accounts. The first selected account will be subsumed into
-              the second account. The Site Administrator can merge users across the whole site;
-              Journal Managers can also merge users, but only those enrolled with their journal.
-              Comprehensive information on merging users can be found in the Journal Manager's <link
+            <para>This page allows you to merge two or more user accounts into one, handy if a user
+              has accidentally created two accounts, or if you have unused or spam accounts in your
+              system. The first selected account will be subsumed into the second account. The Site
+              Administrator can merge users across the whole site; Journal Managers can also merge
+              users, but only those enrolled with their journal. Comprehensive information on
+              merging users can be found in the Journal Manager's <link
                 linkend="journalManagementUserMerge">Merge Users</link> section.</para>
           </sect3>
 
@@ -2029,6 +2149,91 @@
                 </mediaobject>
               </figure>
             </sect4>
+            <sect4 xml:id="journalManagementSetup3-7">
+              <title>Citation Markup Assistant</title>
+              <para>You can configure a Citation Markup Assistant for your Editors, Section Editors
+                and Copyeditors to use during the manuscript editing process. This Assistant will
+                allow Editors to check the Author's list of references against external databases,
+                and will convert approved citations into NLM XML or any of a variety of citation
+                styles for inclusion into the final galley files. If you enable this feature,
+                Authors will be asked to submit their list of references in a separate field during
+                  <link linkend="authorSubmission3">Step 3</link> of the submission process.</para>
+
+              <para>Configuration of the Citation Markup Assistant consists of four general
+                steps:</para>
+
+              <itemizedlist>
+                <listitem>
+                  <para>Enabling the Citation Markup Assistant. Unless this step is done, Editors
+                    will not have access to the Assistant.</para>
+                  <figure>
+                    <title>Setup Step 3.7: Enabling the Citation Markup Assistant</title>
+
+                    <mediaobject>
+                      <imageobject>
+                        <imagedata align="center" fileref="figures/jm_setup_enable_citation.png"
+                          format="PNG"/>
+                      </imageobject>
+                    </mediaobject>
+                  </figure>
+                </listitem>
+
+                <listitem>
+                  <para>Configuring the Citation Extraction Services. These services allow the
+                    system to extract and parse citation information from the list of references the
+                    Author provides.</para>
+                  <figure>
+                    <title>Setup Step 3.7: Configuring the Citation Extraction Services</title>
+
+
+                    <mediaobject>
+                      <imageobject>
+                        <imagedata align="center"
+                          fileref="figures/jm_setup_configure_citation_extraction.png" format="PNG"
+                        />
+                      </imageobject>
+                    </mediaobject>
+                  </figure>
+                </listitem>
+
+                <listitem>
+                  <para>Configuring the Citation Database Connectors. These connectors will allow
+                    Editors to check the extracted citations against external databases for added
+                    accuracy.</para>
+
+                  <figure>
+                    <title>Setup Step 3.7: Configuring the Citation Database Connectors</title>
+
+                    <mediaobject>
+                      <imageobject>
+                        <imagedata align="center"
+                          fileref="figures/jm_setup_configure_citation_database.png" format="PNG"/>
+                      </imageobject>
+                    </mediaobject>
+                  </figure>
+                </listitem>
+                <listitem>
+                  <para>Configuring the Citation Output. This allows you to configure which kind of
+                    citation style Editors will use to compare extracted citations against. </para>
+
+                  <figure>
+                    <title>Setup Step 3.7: Configuring Citation Output</title>
+
+                    <mediaobject>
+                      <imageobject>
+                        <imagedata align="center"
+                          fileref="figures/jm_setup_configure_citation_output.png" format="PNG"/>
+                      </imageobject>
+                    </mediaobject>
+                  </figure>
+                </listitem>
+              </itemizedlist>
+
+              <para>Once these steps have been completed, Authors will be able to submit references
+                separately, Editors will be able to use the Citation Markup Assistant to extract and
+                check them, and the citations will be subsequently available in a variety of export
+                formats including NLM XML and citation-style-specific formatted text. </para>
+            </sect4>
           </sect3>
 
           <sect3 xml:id="journalManagementSetup4">
@@ -2606,8 +2811,8 @@
             directories for article and issue files, you can also see the layout templates that were
             uploaded during the Journal Setup.</para>
           <note>
-            <para>The Files Browser does not currently allow acccess to the journal's <filename>public/</filename>
-              directory.</para>
+            <para>The Files Browser does not currently allow acccess to the journal's
+                <filename>public/</filename> directory.</para>
           </note>
           <figure>
             <title>Files Browser</title>
@@ -2919,8 +3124,9 @@
 
           <para>OJS can be made available to users in any of several supported languages. As well,
             OJS can operate as a multilingual system, providing users with an ability to toggle
-            between languages on each page. Here is an example of a Russian journal using
-            OJS.</para>
+            between languages on each page, and allowing Authors to <link
+              linkend="authorSubmission1">submit content in any supported language</link>. Here is
+            an example of a Russian journal using OJS.</para>
 
           <figure>
             <title>OJS in Greek</title>
@@ -2976,7 +3182,8 @@
           </figure>
 
           <para>You will be able to enable any installed language to be used as part of the overall
-            user interface, or with user-filled web forms, or both.</para>
+            user interface; as an Author-selectable submission option; with user-filled web forms,
+            or a mix of all three.</para>
         </sect2>
 
         <sect2 xml:id="journalManagementMasthead">
@@ -3017,10 +3224,11 @@
             </mediaobject>
           </figure>
 
-          <para>Next. select "Create a Position Title", fill out the title form, and choose whether
-            the title will appear under the Editorial Team or under People on its own in About the
-            Journal. It could be the position of a single person (e.g., Managing Editor) or of a
-            group (e.g., Board Members).</para>
+          <para>Next, select <guibutton>Create a Position Title</guibutton>. Fill out the title
+            field; choose whether emails for this group will be publicly displayed; and choose
+            whether the title will appear under the Editorial Team or under People on its own in
+            About the Journal. It could be the position of a single person (e.g., Managing Editor)
+            or of a group (e.g., Board Members).</para>
 
           <figure>
             <title>Create Title</title>
@@ -3158,17 +3366,20 @@
             These optional tools use an author's keywords to automatically search a relevant open
             access database for related materials which are presented to the reader in another
             window. Readers have a choice of tools, and within each tool a choice of databases,
-            along with access to information about the database. Here is an example from
-            Postcolonial Text. You can see a list of resources in the right menu (under Related
-            Items). The steps below will also show you how to configure the list of links above the
-            Related Items (Review Policy, About the Author, etc.).</para>
+            along with access to information about the database. </para>
+          <para>In the example below you can see that to the right of the demonstration article
+            there are a number of Article Tools (including a Print option; a How to Cite Item
+            option; various email and comment options), and below that are a number of further
+            resources listed under Related Items. The steps below will show you how to configure the
+            list of links above the Related Items (Review Policy, About the Author, etc.), and the
+            related items themselves.</para>
 
           <figure>
             <title>Reading Tools Display</title>
 
             <mediaobject>
               <imageobject>
-                <imagedata align="center" fileref="figures/jm_rt_pocol.png" format="PNG"/>
+                <imagedata align="center" fileref="figures/reader_readingtools.png" format="PNG"/>
               </imageobject>
             </mediaobject>
           </figure>
@@ -3183,12 +3394,12 @@
 
             <mediaobject>
               <imageobject>
-                <imagedata align="center" fileref="figures/jm_rt_pocol_search.png" format="PNG"/>
+                <imagedata align="center" fileref="figures/jm_rt_web_search.png" format="PNG"/>
               </imageobject>
             </mediaobject>
           </figure>
 
-          <sect3 xml:id="configReadingTools">
+          <sect3 xml:id="journalManagementConfigReadingTools">
             <title>Configuring the Reading Tools</title>
 
             <para>By default, the Reading Tools are disabled. To activate and configure them:</para>
@@ -3357,7 +3568,26 @@
             <para><guibutton>Delete</guibutton> removes the item.</para>
           </sect3>
 
-          <sect3 xml:id="manageReadingTools">
+          <sect3 xml:id="journalManagementDisplayReadingTools">
+            <title>Displaying the Reading Tools</title>
+            <para>Reading Tools must be configured to in <link linkend="journalManagementSetup5-6"
+                >Journal Setup Step 5.6</link> before they appear. Both the Reading Tools and
+              Related Items are treated as blocks, and can be moved from the left sidebar to the
+              right, and moved up and down in the block hierarchy.</para>
+
+            <figure>
+              <title>Displaying Reading Tools</title>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata align="center" fileref="figures/jm_rt_display.png" format="PNG"/>
+                </imageobject>
+              </mediaobject>
+            </figure>
+
+          </sect3>
+
+          <sect3 xml:id="journalManagementManageReadingTools">
             <title>Managing the Reading Tools</title>
 
             <para>Returning to the Reading Tools menu, you can now choose <guibutton>Validate URLs
@@ -3379,7 +3609,7 @@
               services).</para>
           </sect3>
 
-          <sect3 xml:id="sharingReadingTools">
+          <sect3 xml:id="journalManagementSharingReadingTools">
             <title>Sharing</title>
 
             <para>This option will allow you to add social networking links (Facebook, Delicious) to
@@ -3465,7 +3695,9 @@
             <para>The Reports section lists available spreadsheet reports about different aspects of
               your journal's activity. The Review Report summarizes the review activities (reviewer
               names, comments, decisions, etc.). The Articles Report summarizes all of the articles
-              in your journal (titles, authors, abstracts, etc.).</para>
+              in your journal (titles, authors, abstracts, etc.). The View Report summarizes
+              abstract view counts, counts for every galley by type, and for all galleys combined,
+              on a per-article basis for every published article. </para>
 
             <figure>
               <title>Report Generator</title>
@@ -3478,8 +3710,8 @@
             </figure>
 
             <note>
-              <para>While OJS only comes with two reports by default, you may be able to find other
-                report plugins in the <link
+              <para>While OJS only comes with three reports by default, you may be able to find
+                other report plugins in the <link
                   xlink:href="http://pkp.sfu.ca/support/forum/viewforum.php?f=28">Plugin
                   Gallery</link>.</para>
             </note>
@@ -3761,8 +3993,9 @@
                 <para>Subscription Expiry: Upon subscription expiry, readers may be denied access to
                   all subscription content, or to those published after subscription expiry date.
                   Useful reminders can be sent out to your subscribers, informing them of expiry
-                  dates. The Site Administrator will need to <link linkend="systemAdministartionScheduledTasks">enable and configure</link>
-                    <code>scheduled_tasks</code> within <filename>config.inc.php</filename> to allow
+                  dates. The Site Administrator will need to <link
+                    linkend="systemAdministartionScheduledTasks">enable and configure</link>
+                  <code>scheduled_tasks</code> within <filename>config.inc.php</filename> to allow
                   for these options to be enabled.</para>
 
                 <figure>
@@ -4243,10 +4476,27 @@
             </sect4>
 
             <sect4 xml:id="journalManagementReferral">
-              <title/>
+              <title>Referral Plugin</title>
               <para>This plugin tracks incoming refback URLs to articles (i.e., when a reader
                 follows an external link to an article), allowing Authors to maintain and
                 potentially publish an automatically-updated list of refbacks to an article.</para>
+
+              <para>The Journal Manager can specify exclusions from the plugin's
+                  <guibutton>Settings</guibutton> page. This limits the number of web crawler
+                requests from cluttering the Author's referral interface. Regular expressions can be
+                used. </para>
+
+              <figure>
+                <title>Referral Plugin Settings</title>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="center" fileref="figures/jm_plugin_referral_settings.png"
+                      format="PNG"/>
+                  </imageobject>
+                </mediaobject>
+              </figure>
+
             </sect4>
 
             <sect4 xml:id="journalManagementCoins">
@@ -4925,6 +5175,188 @@
                 </mediaobject>
               </figure>
             </sect4>
+            <sect4 xml:id="journalManagementSword">
+              <title>SWORD Plugin</title>
+              <para>The SWORD plugin allows authors and/or journals to deposit articles to online
+                repositories such as DSpace and Fedora via the <link
+                  xlink:href="http://swordapp.org/">SWORD protocol</link>. </para>
+
+              <para>You can configure the plugin so that authors are able to specify a deposit point
+                for their submitted article (they will be emailed with instructions when their
+                article has been accepted for publication). You can also specify one or more deposit
+                points, and configure how content is deposited there.</para>
+
+              <figure>
+                <title>Configuring the SWORD Plugin</title>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="center" fileref="figures/jm_plugin_sword.png" format="PNG"/>
+                  </imageobject>
+                </mediaobject>
+              </figure>
+            </sect4>
+
+            <sect4 xml:id="journalManagementBooksForReview">
+              <title>Books for Review Plugin</title>
+              <para>The Books for Review plugin allows Editors to manage their journal's book review
+                process. Editors can publicly list books that are available for review; Authors can
+                request to review books; and Authors and Editors can manage the workflow process
+                through request confirmation, book mailing, review submission, and
+                publication.</para>
+
+              <para>After the Books for Review plugin has been enabled, Editors will find a link to
+                  <guibutton>Books For Review</guibutton> in their User Home page. Clicking on the
+                link will bring you to the Books for Review interface.</para>
+
+              <figure>
+                <title>Books For Review Editor Interface</title>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="center"
+                      fileref="figures/jm_plugins_bookreview_editor_home.png" format="PNG"/>
+                  </imageobject>
+                </mediaobject>
+              </figure>
+
+              <para>In order for the books to be available to Authors and the general public, the
+                Editor must configure the plugin's workflow settings. This can be done by clicking
+                the <guibutton>Settings</guibutton> link and, at a minimum, choosing a Management
+                Mode.</para>
+
+              <figure>
+                <title>Books For Review Settings: Management Mode</title>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="center"
+                      fileref="figures/jm_plugins_bookreview_editor_mode.png" format="PNG"/>
+                  </imageobject>
+                </mediaobject>
+              </figure>
+
+              <para>The Editor can also configure other aspects of the book review workflow and
+                publication process, including whether and where book cover images are displayed;
+                whether book reviews have due dates; and whether email reminders for late reviews
+                should be sent out. Additional information for potential reviewers can also be
+                provided; this will be displayed along with the list of books available for
+                review.</para>
+
+              <figure>
+                <title>Books For Review Settings: Additional Settings</title>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="center"
+                      fileref="figures/jm_plugins_bookreview_editor_additional_settings.png"
+                      format="PNG"/>
+                  </imageobject>
+                </mediaobject>
+              </figure>
+
+              <para>Editors can add new books available for review by clicking the <guibutton>Create
+                  Book for Review</guibutton> link available on either the
+                  <guibutton>All</guibutton> or <guibutton>Available</guibutton> pages. The
+                following form, with fields such as author, title, description, ISBN, and so on must
+                be filled out.</para>
+
+              <figure>
+                <title>Books For Review: Adding a Book</title>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="center" fileref="figures/jm_plugins_bookreview_editor_add.png"
+                      format="PNG"/>
+                  </imageobject>
+                </mediaobject>
+              </figure>
+
+              <para>Additionally, a book cover image can be uploaded; an Author can be assigned to
+                complete the review at the outset; or the Editor can associate the book to a current
+                submission, in the case that an Author has already submitted the review for
+                consideration.</para>
+
+              <note>
+                <para>"Books for review" as entered into the system by Editors are distinct from
+                  Author submissions; but they must eventually be tied to an Author submission,
+                  which is in the end the review itself. Think of the book for review that the
+                  Editor enters into the system as a book entity in and of itself, which must
+                  eventually be attached to the review of it.</para>
+              </note>
+
+              <figure>
+                <title>Books For Review: Adding a Book</title>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="center"
+                      fileref="figures/jm_plugins_bookreview_editor_add2.png" format="PNG"/>
+                  </imageobject>
+                </mediaobject>
+              </figure>
+
+              <para>Any book that the Editor has listed for review, and which has not yet been
+                assigned, is available from a new <guibutton>Books for Review</guibutton> link on
+                the topmost navigation bar, and from an <guibutton>Available Books</guibutton> link
+                in the Author's User Home page. Authors can request to review the book by clicking
+                the <guibutton>Request This Book for Review</guibutton> link, which will send a
+                notification request email to the Editor.</para>
+
+              <figure>
+                <title>Books For Review: Adding a Book</title>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="center" fileref="figures/jm_plugins_bookreview_available.png"
+                      format="PNG"/>
+                  </imageobject>
+                </mediaobject>
+              </figure>
+
+              <para>The Author can check on the status of this book review request by clicking on
+                the <guibutton>My Books</guibutton> link on their User Home page, and viewing the
+                  <guibutton>Requested</guibutton> page. Likewise, the status of assigned, mailed
+                and submitted books can be seen at a glance.</para>
+
+              <para>Editors can also see which books have been requested, and by whom, from their
+                Books for Review interface. They can <guibutton>Accept</guibutton> or
+                  <guibutton>Deny</guibutton> Author review requests; email the Author by clicking
+                the mail icon next to their name; or select an existing submission to match the
+                review with.</para>
+
+              <figure>
+                <title>Books For Review: Requested</title>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="center"
+                      fileref="figures/jm_plugins_bookreview_editor_requested.png" format="PNG"/>
+                  </imageobject>
+                </mediaobject>
+              </figure>
+
+              <para>If the Editor accepts or denies the request, a notification email will be sent
+                to the Author. The Editor will be able to edit this email before it is sent. If the
+                request is accepted, the email will include the Author's mailing address (if
+                available from their user profile), and instructions on adding or updating a mailing
+                address. The email will also include a link that will take the Author to the <link
+                  linkend="authorSubmission">article submission process</link>, whereby the review
+                can be submitted as a normal submission. The only key difference is that at the end
+                of the submission process the Author will be asked to confirm whether the submission
+                is a book review for one of the reviews assigned to them. The review will otherwise
+                be reviewed and edited following the normal conventions.</para>
+
+              <figure>
+                <title>Books For Review: Confirming Review Submission</title>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="center"
+                      fileref="figures/jm_plugins_bookreview_author_confirm.png" format="PNG"/>
+                  </imageobject>
+                </mediaobject>
+              </figure>
+
+              <para>Authors and Editors alike can use their Books for Review interface to track
+                submitted reviews, from submission to publication.</para>
+
+            </sect4>
           </sect3>
           <sect3 xml:id="journalManagementImplicitAuthenticationPlugins">
             <title>Implicit Authentication Plugins</title>
@@ -4975,10 +5407,11 @@
 
             <para>The Review Report will provide information about the review process (reviewer
               names, reviewer decisions, reviewer comments, etc.). The Articles Report provides
-              information about submissions (e.g., authors, titles, abstracts, keywords, etc.).
-              Select <guibutton>Report Generator</guibutton> to build the report. These reports are
-              also available from the Journal Manager's <link
-                linkend="journalManagementStatsReports">Stats and Reports</link> page.</para>
+              information about submissions (e.g., authors, titles, abstracts, keywords, etc.). The
+              View Report provides information on abstract and galley views. Select
+                <guibutton>Report Generator</guibutton> to build the report. These reports are also
+              available from the Journal Manager's <link linkend="journalManagementStatsReports"
+                >Stats and Reports</link> page.</para>
           </sect3>
 
           <sect3 xml:id="journalManagementThemePlugins">
@@ -5390,13 +5823,14 @@
           <title>Merge Users</title>
 
           <para>Occasionally, a user may have created two separate accounts (using two different
-            email addresses), or you may find yourself in a situation where a user has to be removed
-            entirely from the system. To accomplish either, task, you must use the Merge Users
-            feature. Select <guibutton>Merge Users</guibutton> from the Journal Management User Home
-            page. On the resulting page, select a user you wish to merge with another user. In this
-            example, Vincent Oldman has two accounts (voldman and voldman1). He wishes to keep the
-            voldman account and have voldman1 merged into it. Therefore, we will select Merge User
-            next to the voldman1 account.</para>
+            email addresses), or you may find yourself in a situation where one or more users have
+            to be removed entirely from the system. To accomplish either task, you must use the
+            Merge Users feature. Select <guibutton>Merge Users</guibutton> from the Journal
+            Management User Home page. On the resulting page, select a user you wish to merge with
+            another user (or select more than one user to merge at once by using the checkboxes next
+            to the account names). In this example, Vincent Oldman has two accounts (vince and
+            voldman). He wishes to keep the vince account and have voldman merged into it.
+            Therefore, we will select Merge User next to the voldman account.</para>
 
           <figure>
             <title>Selecting the Account to Merge</title>
@@ -5408,7 +5842,7 @@
             </mediaobject>
           </figure>
 
-          <para>Next, we'll select the voldman account (which is the keeper).</para>
+          <para>Next, we'll select the vince account (which is the keeper).</para>
 
           <figure>
             <title>Selecting the Account to Maintain</title>
@@ -5420,7 +5854,11 @@
             </mediaobject>
           </figure>
 
-          <para>This action has effectively deleted the voldman1 account from the system.</para>
+          <para>This action has effectively deleted the voldman account from the system. To remove
+            garbage, test or spam accounts, simply merge the unwanted accounts into your Journal
+            Manager account. Again, you can merge more than one account at a time by clicking the
+            checkboxes next to the unwanted accounts.</para>
+
         </sect2>
       </sect1>
     </chapter>
@@ -5586,9 +6024,29 @@
             </mediaobject>
           </figure>
 
-          <para>First, if the journal charges <link linkend="journalManagementPaymentOptions"
-              >submission fees</link>, these will be presented to the author. If the journal does
-            not charge submission fees, this section will not appear.</para>
+          <para>If the journal allows content to be submitted in more than one language, you will be
+            able to choose a specific language to complete the submission in. You must complete all
+            required fields for the submission language you choose; you can also optionally fill out
+            required and optional fields for the other languages supported by the journal. For
+            example, if you choose French as your submission language, you must provide an article
+            and title in French; but you may also provide that information in English (or whichever
+            other language(s) supported by your journal), as well as any other metadata -- indexing
+            keywords, etc.</para>
+
+          <figure>
+            <title>Submission Language</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="figures/author_submission_step1_language.png"
+                  format="PNG"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>If the journal charges <link linkend="journalManagementPaymentOptions">submission
+              fees</link>, these will be presented to the author. If the journal does not charge
+            submission fees, this section will not appear.</para>
 
           <figure>
             <title>Author Fees</title>
@@ -5662,7 +6120,7 @@
           </figure>
         </sect2>
 
-        <sect2 xml:id="authorSubmission3">
+        <sect2 xml:id="authorSubmission2">
           <title>Submission Step Two: Uploading the Submission</title>
 
           <para>Submission Step Two allows you to upload the submission file, typically a
@@ -5707,7 +6165,7 @@
           </itemizedlist>
         </sect2>
 
-        <sect2 xml:id="authorSubmission2">
+        <sect2 xml:id="authorSubmission3">
           <title>Submission Step Three: Entering the Submission's Metadata</title>
 
           <para>The third step of the submission process serves to collect all relevant metadata
@@ -5770,7 +6228,7 @@
             </mediaobject>
           </figure>
 
-          <para>The final section allows you to enter the name of any organization that may have
+          <para>The next section allows you to enter the name of any organization that may have
             supported your research.</para>
 
           <figure>
@@ -5779,6 +6237,22 @@
             <mediaobject>
               <imageobject>
                 <imagedata align="center" fileref="figures/author_submission_step3_supporting.png"
+                  format="PNG"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>Depending on how the journal is configured, you may find an option to provide your
+            list of references separately. This will allow the journal's Editors and Copyeditors to
+            check your references using a Citation Markup Assistant. You should provide your list
+            with each reference on a separate line.</para>
+
+          <figure>
+            <title>References</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="figures/author_submission_step3_references.png"
                   format="PNG"/>
               </imageobject>
             </mediaobject>
@@ -6737,7 +7211,7 @@
             </sect4>
           </sect3>
 
-          <sect3>
+          <sect3 xml:id="editorAccess">
             <title>Access</title>
 
             <para>If your journal has enabled <link linkend="journalManagementSetup4-1"
@@ -6760,12 +7234,11 @@
           <sect3 xml:id="editorNotifyUsers">
             <title>Notify Users</title>
 
-            <para>You can send an email notification to all users associated with your journal by
-              clicking the <guibutton>Notify Users</guibutton> link. Before sending the email, you
-              can choose to have the email sent only to those who have indicated they wish to
-              receive notifications regarding newly-published material (this option is available in
-              a user's Profile), or to all users associated with your journal -- Journal Managers,
-              Editors, Authors, Readers, and so on. You can also opt to include the table of
+            <para>You can send an email notification to all users associated with your journal, or a
+              subset of those users, by clicking the <guibutton>Notify Users</guibutton> link.
+              Before sending the email, you can choose to have the email sent to all users
+              associated with the journal, or optionally to a subset of those users, such as
+              Readers; published Authors; Subscribers; etc. You can also opt to include the table of
               contents of an issue. Finally, you have one more chance to edit the prepared email
               template before it is sent.</para>
 
@@ -7993,6 +8466,154 @@
           </sect3>
         </sect2>
 
+        <sect2 xml:id="sectionEditorReferences">
+          <title>Submission References</title>
+          <para>At any point in the review and editing process, the Editor, Section Editor and
+            Copyeditor assigned to the submission can access the submission's
+              <guibutton>References</guibutton> page. This page contains the Citation Markup
+            Assistant tool (configured in Journal Setup <link linkend="journalManagementSetup3-7"
+              >Step 3.7</link>). This tool helps to edit article references, and allows approved
+            citations to be exported in various formats (including NLM XML and a number of different
+            citation styles) to be added to final article galleys.</para>
+
+          <para>The first time you use the assistant, you will see an introductory text explaining
+            how it can be used. </para>
+          <figure>
+            <title>Citation Markup Assistant: Introduction</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="figures/se_citation_introduction.png"
+                  format="PNG"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>If you don't want to see this text every time you use the assistant, you can check
+            the bottom check-box.</para>
+
+          <para>The assistant helps you with two processes: editing citations (including attempting
+            to extract them from the reference list supplied by the Author, and checking them
+            against external databases for accuracy and extra detail), and formatting citations for
+            export in various formats. These two processes are available in their own tabs. </para>
+
+          <note>
+            <para>All citations must be approved through the editing process before they can be
+              exported.</para>
+          </note>
+
+          <para>Clicking on the <guibutton>Edit Citations</guibutton> tab will display all extracted
+            citations on the left view pane, and initially, instructions on the right view pane. </para>
+
+          <figure>
+            <title>Citation Markup Assistant: Viewing the Edit Citations View Pane</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="figures/se_citation_edit_citations.png"
+                  format="PNG"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+
+          <para>Clicking on an individual citation in the left pane will display information on that
+            citation in the right view pane. Changes can be made and saved by clicking the
+              <guibutton>Save</guibutton> button at the bottom of the pane, or canceled by clicking
+            the <guibutton>Cancel</guibutton> button. New citations can be added by clicking the
+              <guibutton>New Citation</guibutton> icon, found just above the left view pane, and
+            individual citations can be deleted by clicking the <guibutton>Delete
+              Citation</guibutton> icon to the left of the citation listing in the left view
+            pane.</para>
+
+          <para>Citations that have been fully proofed can be marked as approved by clicking the
+              <guibutton>Approve</guibutton> button. When a citation has been approved, it will show
+            up with a blue border in the left view pane, and you will be automatically moved to the
+            next unapproved citation.</para>
+          <figure>
+            <title>Citation Markup Assistant: Individual Citation View</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="figures/se_citation_edit_view.png" format="PNG"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>You will see the original citation, and the changes the Assistant has made as part
+            of the extraction and lookup process. It will display the way the citation will appear
+            as per your journal's selected citation style.</para>
+
+          <figure>
+            <title>Citation Markup Assistant: Original and Parsed Citations</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="figures/se_citation_original_parsed.png"
+                  format="PNG"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>Additionally, you can also manually edit the citation; check it again against the
+            journal's configured citation database services; search for it in Google Scholar; or ask
+            the Author for further citation information.</para>
+
+          <figure>
+            <title>Citation Markup Assistant: Improving Citations</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="figures/se_citation_improving.png" format="PNG"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>Finally, you can access and choose between detailed expert internal citation service
+            results to help improve the citation. You can access and choose results for each
+            citation database connector that has been configured by the Journal Manager.</para>
+
+          <figure>
+            <title>Citation Markup Assistant: Expert Internal Citation Service Results</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="figures/se_citation_expert.png" format="PNG"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>Once all citations have been approved, you will be automatically moved to the Export
+            Citations tab. Citations can be exported in NLM XML (2.3 or 3.0), or in a variety of
+            different citation formats, including ABNT, APA, MLA, and Vancouver. Exported citations
+            can be copied and pasted directly into your final galley document; the different
+            citation formats, meant for pasting into Word or other non-XML-specific layout and
+            editing applications, include links to look up each citation in Google Scholar.</para>
+
+          <figure>
+            <title>Citation Markup Assistant: NLM XML Export</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="figures/se_citation_nlm_export.png" format="PNG"
+                />
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <figure>
+            <title>Citation Markup Assistant: MLA Export</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="figures/se_citation_mla_export.png" format="PNG"
+                />
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+        </sect2>
+
         <sect2 xml:id="sectionEditorArchives">
           <title>Submission Archives</title>
 
@@ -8700,7 +9321,7 @@
             relevant forums, as well as contact the author or share the item with another
             Reader.</para>
 
-          <para>The Tools open in a frame in the user's browser to the right of the article or item
+          <para>The Tools are displayed in the user's browser to the right of the article or item
             being read:</para>
 
           <figure>
@@ -9781,5 +10402,5 @@ show_stats =  On</programlisting>
       </sect1>
     </chapter>
   </part>
-  
+
 </book>

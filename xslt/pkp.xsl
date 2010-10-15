@@ -56,8 +56,9 @@
     <!-- misc. parameters -->
     <xsl:param name="use.role.for.mediaobject">1</xsl:param>
     <xsl:param name="section.autolabel">1</xsl:param>
-    <xsl:param name="section.autolabel.max.depth">3</xsl:param>
-   <xsl:param name="chunk.first.sections">1</xsl:param>
+    <xsl:param name="section.autolabel.max.depth">2</xsl:param>
+    <xsl:param name="chunk.section.depth">3</xsl:param>
+    <xsl:param name="chunk.first.sections">1</xsl:param>
     <!-- kludge to fix the inability to add proper linebreaks. 
     If you want to add a linebreak anywhere in an XML doc, add 
     <?linebreak?> where you want it.  -->

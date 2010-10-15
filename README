@@ -1,1 +1,3 @@
 This repository contains all kinds of PKP documentation for OJS, OCS, OMP, PKP Harvester, and anything else we might dream up one day. 
+
+Documentation is written in DocBook XML [http://docbook.org/]; transformation into HTML and PDF is accomplished using the DocBook Stylesheet library [http://sourceforge.net/projects/docbook/] and a number of custom stylesheets. Both the XML and the custom stylesheets, as well as any images, are available online at http://github.com/pkp/docs/. We welcome changes to the original, as well as translations to other languages. Instructions on working with Docbook XML can be found on the PKP wiki [http://pkp.sfu.ca/wiki]. For further information, please email the PKP Team at pkp.contact@gmail.com. 
