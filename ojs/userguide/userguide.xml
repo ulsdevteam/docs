@@ -81,7 +81,7 @@
 
     <para xlink:href="http://pkp.sfu.ca/omp">Begun in 1998, PKP has developed <link
         xlink:href="http://pkp.sfu.ca/ojs">Open Journal Systems</link>, <link
-        xlink:href="http://pkp.sfu.ca/ocs">Open Conference Systems</link>, and <link
+          xlink:href="http://pkp.sfu.ca/ocs">Open Conference Systems</link>, and <link
         xlink:href="http://pkp.sfu.ca/omp">Open Monograph Press</link> -- free software for the
       management, publishing, and indexing of journals and conferences, as well as <link
         xlink:href="http://pkp.sfu.ca/harvester">Open Archives Harvester</link> and <link
@@ -400,7 +400,7 @@
       <sect1 xml:id="overviewCommunityContributions">
         <title>Community Contributions</title>
 
-        <para>The OJS team encourages contributions from the developer community. If you are
+        <para>The PKP team encourages contributions from the developer community. If you are
           interested in getting involved in making OJS even better, we welcome your
           participation.</para>
 
@@ -414,16 +414,12 @@
       <sect1 xml:id="overviewTestDrive">
         <title>Test-Drive OJS</title>
 
-        <para>A demonstration journal utilizing OJS 2.2.2 has been set up online at <link
-            xlink:href="http://pkp.sfu.ca/ojs/demo/present/"
-            >http://pkp.sfu.ca/ojs/demo/present/</link>.</para>
-
-        <para>In addition, potential users of OJS may take OJS out for a test-drive – as a Journal
-          Manager, Editor, or a Reviewer – at a second demonstration journal site that has been set
+        <para>Potential users of OJS may take it out for a test-drive – as a Journal
+          Manager, Editor, or a Reviewer – at a demonstration journal site that has been set
           up for this purpose at <link xlink:href="http://pkp.sfu.ca/ojs/demo/testdrive/"
             >http://pkp.sfu.ca/ojs/demo/testdrive/</link>.</para>
 
-        <para>Log in using admin as the username and testdrive as the password, and select one of
+        <para>Log in using "admin" as the username and "testdrive" as the password, select one of
           the available roles in the editorial process, and explore how it operates.</para>
 
         <para>Also feel free to submit a test manuscript to see what authors experience, or assign
@@ -454,11 +450,11 @@
             </imageobject>
           </mediaobject>
         </figure>
-
+<note>
         <para>The system can also be set up to <link linkend="redirectJournal">redirect visitors to
             a single journal</link>, which is helpful if the site is only hosting one
           journal.</para>
-
+</note>
         <para>You will see a list of all the journals on the system from the site-level main page,
           and can visit a journal by clicking on the <guibutton>View Journal</guibutton>
           link.</para>
