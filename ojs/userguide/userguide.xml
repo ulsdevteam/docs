@@ -692,7 +692,7 @@
             <note>
               <para>Sometimes you may see even more links in the topmost navigation bar. For
                 example, you may see an <guibutton>Announcements</guibutton> link, which will take
-                you to a page containing journal-specific announcements. The Jounal Manager may also
+                you to a page containing journal-specific announcements. The Journal Manager may also
                 have created custom links to appear here, taking you to specific pages within the
                 system, or even to other websites (see Journal Setup for more information). Neither
                 the <guibutton>Announcements</guibutton> link nor the custom links are on by
@@ -1060,7 +1060,7 @@
         <sect2 xml:id="basicsRolesProfile">
           <title>Viewing and Changing your Profile</title>
 
-          <para>To view and edit your profile, log in and click the Edit <guibutton>My
+          <para>To view and edit your profile, log in and click the <guibutton>Edit My
               Profile</guibutton> link from your User Home page. Alternatively, once logged in you
             can always click the <guibutton>My Profile</guibutton> link from the User Navigation
             block on the sidebar, if available. From here, you can update your email address, change
@@ -2250,7 +2250,7 @@
                     or the use of subscriptions to control access to some or all content. If you
                     enable subscription control, you can allow for delayed open access to content.
                     You may also target individual articles as openly-available within a
-                    subscription issue. If subscription access is chose, the role of Subscription
+                    subscription issue. If subscription access is chosen, the role of Subscription
                     Manager will be created, allowing for the creation/management of subscriptions,
                     subscription types, and subscription policies.</para>
 
@@ -2807,7 +2807,7 @@
             directories for article and issue files, you can also see the layout templates that were
             uploaded during the Journal Setup.</para>
           <note>
-            <para>The Files Browser does not currently allow acccess to the journal's
+            <para>The Files Browser does not currently allow access to the journal's
                 <filename>public/</filename> directory.</para>
           </note>
           <figure>
@@ -2946,7 +2946,7 @@
             </mediaobject>
           </figure>
 
-          <para>Click on <guibutton>Create Review Form</guibutton> link</para>
+          <para>Click on <guibutton>Create Review Form</guibutton> link.</para>
 
           <figure>
             <title>Review Forms</title>
@@ -2985,7 +2985,7 @@
             </mediaobject>
           </figure>
 
-          <para>Click on the <guibutton>Edit</guibutton> link next to the title of review form, and
+          <para>Click on the <guibutton>Edit</guibutton> link next to the title of the review form, and
             then on the Review Form page select <guibutton>Form Items</guibutton> to start adding
             questions (i.e., "items") to this review form.</para>
 
@@ -3027,7 +3027,7 @@
           </figure>
 
           <para>In the Item box, type in the question. You can then select whether or not to make
-            the question required. Finally, choose an item type from the dropdown menu: single word
+            the question mandatory for reviewers to fill out. Finally, choose an item type from the dropdown menu: single word
             text box, single line text box, extended text box (this is a larger text box allowing
             for a more detailed response), checkbox (this would allow reviewers to check off one or
             more choices), radio button (this limits reviewers to selecting a single answer), or
@@ -3125,7 +3125,7 @@
             an example of a Russian journal using OJS.</para>
 
           <figure>
-            <title>OJS in Greek</title>
+            <title>OJS in Russian</title>
 
             <mediaobject>
               <imageobject>
@@ -3304,7 +3304,7 @@
 
           <itemizedlist>
             <listitem>
-              <para>Go to Management Pages section and select <guibutton>Prepared
+              <para>Go to the Management Pages section and select <guibutton>Prepared
                 Emails</guibutton>:</para>
 
               <figure>
@@ -3402,7 +3402,7 @@
 
             <itemizedlist>
               <listitem>
-                <para>Go to Management Pages section and select <guibutton>Reading
+                <para>Go to the Management Pages section and select <guibutton>Reading
                   Tools</guibutton>.</para>
 
                 <figure>
@@ -4254,7 +4254,7 @@
             to leave out.</para>
 
           <para>Currently included plugins include an alternative user authentication system (LDAP),
-            imports and exports, an indexing tool for Google Scholar, themes, block plugins for UI
+            imports and exports, themes, block plugins for UI
             extensions, and more.</para>
 
           <para>To see all of the available plugins, select System Plugins from the Journal
@@ -9819,11 +9819,12 @@ name = ojs</programlisting>
           </informalexample>
 
           <para>Back up the database using the mysqldump tool, e.g. if the backup should be placed
-            in <filename>/root/</filename>:</para>
+            in <filename>/root/</filename> (you will be prompted for the database password):</para>
 
           <informalexample>
-            <programlisting>$ <code>mysqldump -u pkpuser -p password | gzip -9 &gt; /root/ojs-database.sql.gz</code></programlisting>
+            <programlisting>$ <code>mysqldump -u pkpuser -p databasename | gzip -9 &gt; /root/ojs-database.sql.gz</code></programlisting>
           </informalexample>
+          
 
           <para>Of course, phpMyAdmin or other tools could be used to back up the database.</para>
 
@@ -10284,7 +10285,7 @@ captcha_on_comments = On
 ; Font location for font to use in Captcha images
 font_location = /usr/share/fonts/truetype/freefont/FreeSerif.ttf</programlisting>
 
-            <para>Please note that your server needs to support the IMLIB library for this to work,
+            <para>Please note that your server needs to support the GD (PHP4) or GD2 (PHP5) library for this to work,
               and that you need to point your <code>font_location</code> variable to a font that
               exists on your system, which may be different than the default provided.</para>
           </informalexample>
