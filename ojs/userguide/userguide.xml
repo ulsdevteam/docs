@@ -1447,10 +1447,9 @@
             this section, with checkboxes next to their name. To enable locales to be available
             on-site, check the box next to their name and click the <guibutton>Save</guibutton>
             button. Users will then be able to choose the locale from the drop-down
-            <!-- LINK HERE language menu --> on the right sidebar on all general site pages; Journal
-            Managers will also now have the option of <!-- LINK HERE enabling locales --> for their
-            journal (these locales will not be enabled at the journal level by default). to users on
-            the site, check the box next to</para>
+            language menu on the right sidebar on all general site pages; Journal
+            Managers will also now have the option of enabling locales for their
+            journal (these locales will not be enabled at the journal level by default).</para>
 
           <para>You can also choose the site's primary locale -- this is the locale that users will
             first see the site in when first visiting the web site, and will be the default language
