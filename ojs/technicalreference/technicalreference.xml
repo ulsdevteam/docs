@@ -163,7 +163,7 @@
             <para>Open Journal Systems 2.x is written in object-oriented PHP (<link
                     xlink:href="http://www.php.net/">http://www.php.net</link>) using the Smarty
                 template system for user interface abstraction (<link
-                    xlink:href="http://smarty.net/">http://smarty.net</link>). Data is stored in a
+                    xlink:href="http://www.smarty.net/">http://www.smarty.net</link>). Data is stored in a
                 SQL database, with database calls abstracted via the ADODB Database Abstraction
                 library (<link xlink:href="http://adodb.sourceforge.net/"
                     >http://adodb.sourceforge.net</link>).</para>
@@ -2119,8 +2119,8 @@
             <sect2 xml:id="classReferenceTemplateSupport">
                 <title>Template Support</title>
 
-                <para>Smarty templates (<link xlink:href="http://smarty.net/"
-                        >http://smarty.net</link>) are accessed and managed via the
+                <para>Smarty templates (<link xlink:href="http://www.smarty.net/"
+                        >http://www.smarty.net</link>) are accessed and managed via the
                         <code>TemplateManager</code> class
                         (<filename>classes/template/TemplateManager.inc.php</filename>), which
                     performs numerous common tasks such as registering additional Smarty functions
@@ -2308,8 +2308,8 @@ $articleDao->deleteArticleById($articleId);]]></programlisting>
             locale-specific translations using a custom Smarty function.</para>
 
         <para>You should be familiar with Smarty templates before working with OJS 2.x templates.
-            Smarty documentation is available from <link xlink:href="http://smarty.php.net/"
-                >http://smarty.php.net</link>.</para>
+            Smarty documentation is available from <link xlink:href="http://www.smarty.net/"
+                >http://www.smarty.net</link>.</para>
         <sect1 xml:id="userInterfaceVariables">
             <title>Variables</title>
 
